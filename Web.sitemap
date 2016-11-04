@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Home" description="Home" url="Default.aspx" >
+    <siteMapNode title="About" description="About" url="About.aspx" />
+    <siteMapNode title="My Guitars" description="My Guitars" url="Myguitars.aspx">
+    <siteMapNode title="Ibanez SZ320" description="Ibanez SZ320" url="Ibanezsz320.aspx"></siteMapNode>
+    <siteMapNode title="Gibson Les Paul" description="Gibson Les Paul" url="Gibsonlespaul.aspx"></siteMapNode>
+    <siteMapNode title="Ibanez GR" description="Ibanez GR" url="Ibanezgr.aspx" ></siteMapNode>
+  <siteMapNode title="Ibanez Acoustic" description="Ibanez Acoustic" url="Ibanezacoustic.aspx"></siteMapNode>
+    </siteMapNode>
+  <siteMapNode title="Dream Guitars" description="Dream Guitars" url="Dreamguitars.aspx" >
+    <siteMapNode title="John Petrucci Musicman" description="John Petrucci Musicman" url="Musicman.aspx"></siteMapNode>
+    <siteMapNode title="Fender Telecaster" description="Fender Telecaster" url="Telecaster.aspx"></siteMapNode>
+    <siteMapNode title="Schecter Tempest Custom" description="Schecter Tempest Custom" url="Tempest.aspx"></siteMapNode>
+    <siteMapNode title="Gibson Firebird" description="Gibson Firebird" url="Firebird.aspx"></siteMapNode>
+  </siteMapNode>
+  <siteMapNode title="Guitar Database" description="Guitar Database" url="Guitardatabase.aspx" />
+  <siteMapNode title="Contact" description="Contact" url="Contact.aspx" />
+  </siteMapNode>
+</siteMap>

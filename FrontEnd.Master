@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FrontEnd.master.cs" Inherits="GuitarSite.FrontEnd" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Gary's Guitars</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/style.css" rel="stylesheet" />
+    <link href="Styles/flexslider.css" rel="stylesheet" />
+    <link href="Styles/accordion.css" rel="stylesheet" />
+
+    <script src="scripts/jquery-2.1.3.min.js"></script>
+    <script src="scripts/jquery.flexslider.js"></script>
+    <script src="scripts/jquery.accordion.js"></script>
+
+</head>
+ <body>
+    <div id="wrapper">
+    <header>
+        <div role="banner" id="banner">
+            <asp:Panel ID="Panel1" runat="server">
+                <asp:Image ID="banner_img" runat="server" ImageUrl="Images/banner.jpg"/>
+            </asp:Panel>
+    </div>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="About.aspx">About</a></li>
+                <li><a href="Myguitars.aspx">My Guitars</a>
+                    <ul>
+                        <li><a href="Ibanezsz320.aspx">Ibanez SZ320</a></li>
+                        <li><a href="Gibsonlespaul.aspx">Gibson Les Paul Studio</a></li>
+                        <li><a href="Ibanezgr.aspx">Ibanez GR</a></li>
+                        <li><a href="Ibanezacousic.aspx">Ibanez Acoustic</a></li>
+                    </ul>
+                </li>
+                <li><a href="Dreamguitars.aspx">Dream Guitars</a>
+                    <ul>
+                        <li><a href="Tempest.aspx">Schecter Tempest Custom</a></li>
+                        <li><a href="Musicman.aspx">Petrucci Musicman</a></li>
+                        <li><a href="Firebird.aspx">Gibson Firebird</a></li>
+                        <li><a href="Telecaster.aspx">Fender Telecaster</a></li>
+                    </ul>
+                </li>
+                <li><a href="Guitardatabase.aspx">Guitar Database</a></li>
+                <li><a href="Contact.aspx">Contact</a></li>
+            </ul>
+        </nav>
+    <br />
+    <div role="navigation" id="breadcrumb">
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+    </div>
+    <br />
+        <h1><%:Page.Title%></h1>
+
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+
+        <footer>
+            <ul>
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="About.aspx">About</a></li>
+                <li><a href="Myguitars.aspx">My Guitars</a></li>
+                <li><a href="Dreamguitars.aspx">Dream Guitars</a></li>
+                <li><a href="Guitardatabase.aspx">Guitar Database</a></li>
+                <li><a href="Contact.aspx">Contact</a></li>
+            </ul>
+            &copy Gary's Guitars 2016. All Rights Reserved
+        </footer>
+    </div>
+ </body>
+</html>
